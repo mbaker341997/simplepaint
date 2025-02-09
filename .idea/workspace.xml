@@ -5,29 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22438080-5935-46dd-8ce3-610d068ff6b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/PaintCanvasContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/SimplePaintApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/SimplePaintController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/tools/AbstractDrawTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/tools/LineTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/tools/PencilTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/tools/RectangleTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/tools/Tool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/tools/ToolName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/baker/simplepaint/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/tools/OvalTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/SimplePaintApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/SimplePaintApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/tools/AbstractDrawTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/tools/AbstractDrawTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/tools/RectangleTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/tools/RectangleTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/tools/ToolName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/baker/simplepaint/tools/ToolName.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

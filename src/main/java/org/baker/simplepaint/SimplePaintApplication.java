@@ -13,6 +13,7 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import org.baker.simplepaint.tools.LineTool;
+import org.baker.simplepaint.tools.OvalTool;
 import org.baker.simplepaint.tools.PencilTool;
 import org.baker.simplepaint.tools.RectangleTool;
 import org.baker.simplepaint.tools.ToolName;
@@ -40,14 +41,15 @@ public class SimplePaintApplication extends Application {
           Color.BLACK,
           Color.WHITE,
           1.0,
-          ToolName.RECTANGLE);
+          ToolName.OVAL);
 
       // add tools
       var toolsMap = Map.of(
           ToolName.PENCIL, new PencilTool(paintCanvasContext, false),
           ToolName.ERASER, new PencilTool(paintCanvasContext, true),
           ToolName.LINE, new LineTool(paintCanvasContext),
-          ToolName.RECTANGLE, new RectangleTool(paintCanvasContext)
+          ToolName.RECTANGLE, new RectangleTool(paintCanvasContext),
+          ToolName.OVAL, new OvalTool(paintCanvasContext)
       );
 
       // add listeners
@@ -80,7 +82,7 @@ public class SimplePaintApplication extends Application {
 
     // https://docs.oracle.com/javafx/2/canvas/jfxpub-canvas.htm
     private void drawShapes(GraphicsContext gc) {
-      // TODO: rectangle draw onMouseDragEvent
+      // TODO: paint bucket
       // TODO: color selection SIMPLE
       // TODO: size selection simple
       // TODO: text box
@@ -93,7 +95,7 @@ public class SimplePaintApplication extends Application {
       // TODO: undo/redo
       // TODO: invert colors
       // TODO: resize canvas
-      // TODO: fill box
+      // TODO: fill shape
       // TODO: remove color - direct
       // TODO: remove color - range
       // TODO: layers

@@ -6,15 +6,15 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 import org.baker.simplepaint.PaintCanvasContext;
 
-public class RectangleTool extends AbstractDrawTool {
+public class OvalTool extends AbstractDrawTool {
   private Point2D nullableStartPoint;
 
-  public RectangleTool(PaintCanvasContext paintCanvasContext) {
+  public OvalTool(PaintCanvasContext paintCanvasContext) {
     super(paintCanvasContext);
     this.nullableStartPoint = null;
   }
 
-  public void drawRect(
+  public void drawOval(
       GraphicsContext graphicsContext,
       MouseEvent mouseEvent,
       Runnable absentStartPointFunction
@@ -22,7 +22,7 @@ public class RectangleTool extends AbstractDrawTool {
     this.paintCanvasContext.clearTempGraphicsContext();
     Optional.ofNullable(this.nullableStartPoint).ifPresentOrElse(startPoint -> {
           var boundingBoxInfo = this.getBoundingBox(startPoint, mouseEvent);
-          graphicsContext.strokeRect(
+          graphicsContext.strokeOval(
               boundingBoxInfo.topLeftCorner().getX(),
               boundingBoxInfo.topLeftCorner().getY(),
               boundingBoxInfo.width(),
@@ -35,7 +35,7 @@ public class RectangleTool extends AbstractDrawTool {
   @Override
   public void handleMouseDragged(MouseEvent mouseEvent) {
     // draw rect on temp canvas, set start point of new rect if necessary
-    this.drawRect(
+    this.drawOval(
         this.paintCanvasContext.getTempGraphicsContext(),
         mouseEvent,
         () -> this.nullableStartPoint = new Point2D(mouseEvent.getX(), mouseEvent.getY()));
@@ -43,7 +43,7 @@ public class RectangleTool extends AbstractDrawTool {
 
   @Override
   public void handleMouseReleased(MouseEvent mouseEvent) {
-    this.drawRect(
+    this.drawOval(
         this.paintCanvasContext.getPrimaryGraphicsContext(),
         mouseEvent,
         () ->  { });
